@@ -3,7 +3,7 @@ import { compose } from 'redux';
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect';
 
-import CardMovie from "../../components/CardMovie";
+import MovieCard from "../../components/MovieCard";
 
 import { fetchMovies } from './actions';
 import { selectMoviesData } from './selectors';
@@ -33,7 +33,7 @@ class MoviesList extends React.PureComponent {
           <div className="Movies-List-Container">
               {
                   moviesData.fetched && moviesData.list.map((movie) => (
-                      <CardMovie key={movie.id} movie={movie} />
+                      <MovieCard key={movie.id} movie={movie} />
                   ))
               }
           </div>

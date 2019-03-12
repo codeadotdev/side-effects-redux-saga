@@ -11,9 +11,8 @@ import App from './containers/App';
 import configureStore from './configureStore';
 import * as serviceWorker from './serviceWorker';
 
-
 import moviesSagas from './containers/MoviesList/sagas';
-import movieDetailsSagas from './containers/MovieDetails/sagas';
+import movieDetailsSagas from './containers/MovieDetailsProvider/sagas';
 
 const initialState = {};
 const store = configureStore(initialState, history);

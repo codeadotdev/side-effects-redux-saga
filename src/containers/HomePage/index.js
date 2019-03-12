@@ -22,9 +22,9 @@ class App extends Component {
                         Learn React
                     </a>
                     <p>
-                        Post about how to manage side effects for your application redux
+                        Article about how to manage side effects for your Redux application
                     </p>
-                    <Link to="/movies" >
+                    <Link to="/movies" className="App-link">
                         movies
                     </Link>
                 </header>

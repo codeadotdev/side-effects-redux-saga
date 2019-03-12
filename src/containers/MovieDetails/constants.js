@@ -1,1 +1,0 @@
-export const GET_MOVIE_DETAILS = 'app/MovieDetails/GET_MOVIE_DETAILS';

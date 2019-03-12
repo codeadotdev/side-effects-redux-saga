@@ -5,6 +5,7 @@ import { getMovieDetailsRequest } from './requests';
 
 export function* getMovieDetails(action) {
     const movieId = action.payload;
+
     try {
         yield put(actions.getMovieDetails.request(movieId));
         const data = yield call(getMovieDetailsRequest, movieId);
@@ -32,5 +33,4 @@ function* takeMovieTask() {
 
         tasks[action.payload] = yield fork(getMovieDetails, action);
     }
-
 }

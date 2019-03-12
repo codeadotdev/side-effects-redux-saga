@@ -7,7 +7,7 @@ export function makeMovieState() {
     };
 }
 
-export function getNeWMovieState(movieId, state, newState) {
+export function getNewMovieState(movieId, state, newState) {
     if (!state[movieId]) {
         return {
             ...state,

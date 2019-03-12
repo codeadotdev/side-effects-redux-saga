@@ -9,7 +9,9 @@ export function* fetchMovies() {
         const filters = yield select(selectRequestFilters);
 
         yield put(actions.fetchMovies.request());
+
         const data = yield call(fetchMoviesRequest, filters);
+
         yield put(actions.fetchMovies.success(data));
     } catch (err) {
         yield put(actions.fetchMovies.failure(err));

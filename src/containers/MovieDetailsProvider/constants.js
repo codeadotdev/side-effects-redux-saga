@@ -1,0 +1,1 @@
+export const GET_MOVIE_DETAILS = 'app/MovieDetailsProvider/GET_MOVIE_DETAILS';

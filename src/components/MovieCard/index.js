@@ -1,10 +1,10 @@
 import React, { useState }  from 'react';
 
-import MovieDetails from '../../containers/MovieDetails'
+import MovieOverviewWidget from '../../containers/MovieDetailsWidget'
 
 import './styles.css';
 
-function CardMovie({ movie }) {
+function MovieCard({ movie }) {
     const [isOpen, setToggle] = useState(false);
 
     const toggle = () => setToggle(!isOpen);
@@ -17,7 +17,7 @@ function CardMovie({ movie }) {
 
             {
                 isOpen && (
-                    <MovieDetails id={id} onClose={toggle} />
+                    <MovieOverviewWidget id={id} onClose={toggle} />
                 )
             }
 
@@ -25,4 +25,4 @@ function CardMovie({ movie }) {
     );
 }
 
-export default CardMovie;
+export default MovieCard;
